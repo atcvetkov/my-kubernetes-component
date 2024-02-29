@@ -4,6 +4,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: my-kubernetes-component
   name: my-kubernetes-component
+  namespace: glass
 spec:
   lifecycle: production
   owner: my-team
