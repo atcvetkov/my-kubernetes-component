@@ -2,8 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
-    backstage.io/kubernetes-id: my-kubernetes-component
-  name: my-kubernetes-component
+    # backstage.io/kubernetes-id: my-kubernetes-component
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=glass-landing-app,framework=sole
+  name: landing-app
   namespace: glass
 spec:
   lifecycle: production
